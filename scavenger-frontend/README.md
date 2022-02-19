@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# Lassonde Games 2022 Geared In (Programming)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9f7b37d6-b6ea-41c0-a0fd-5e4bb15d852e/deploy-status)](https://app.netlify.com/sites/unruffled-goldwasser-566d13/deploys)
 
-## Available Scripts
+OSC Scavenger is a web application for scavenger hunts at the Ontario Sciecne Center. It is also able to be printed into a pdf form so that it can be used offline.
 
-In the project directory, you can run:
+Links to the sites attached below. For testing the backend admin panel use for signing in. Then navigate to content management in the upper left corner then press to "create a new entry". After filling in the data insure that it set to published and not draft then view the frontend site to see your new challenge added.
 
-### `npm start`
+```
+username: testuser@my.yorku.ca
+password: LassondeGames22!
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+[Frontend Link](https://unruffled-goldwasser-566d13.netlify.app/)
+[Backend Link](https://lassonde-games-strapi.herokuapp.com/admin/)
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Features
+- Maintainable by OSC by using a headless CMS strapi more challenges can be added
+- Filter by difficulty for the varying age ranges (ex. 8-13 can use easy,medium,hard challenges)
+- TTS added for reading out the scavenger hunt questions in multiple languages
+- Badges added for when successfully completing challenges
 
-### `npm run build`
+## Tech
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Jamstack 🍯🍇🍓🫐
+- React
+- TailwindCSS 
+- Strapi (Headless CMS, Postgres for storing the CMS data) 
+- Netlify & Heroku & Cloudinary for deployment of Frontend,Backend and image storage respectively.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Installation
 
-### `npm run eject`
+Install the dependencies and devDependencies and start the server.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
+cd scavenger-frontend
+npm install
+npm start
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
+cd scavenger-backend
+npm install
+npm run develop // for changing and updating the CMS in development
+```
+API keys for cloudinary etc. will need to be provided in a .env file if you are wanting to create your own. Guide below gives a pretty good idea of getting it set up.
+https://strapi.io/blog/add-cloudinary-support-to-your-strapi-application
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Libraries Used
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+| Library | 
+| ------ | 
+| React-to-print |  
+| React-speech-kit | 
+| TailwindCSS| 
