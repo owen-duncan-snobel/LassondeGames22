@@ -1,12 +1,13 @@
 import './App.css';
 import Cards from './components/cards';
 import Scavenger from './components/scavenger';
+import Menu from './components/menu';
 
 function App() {
 	return (
 		<div>
-			<div className="text-red-500">Working</div>
-      <Scavenger />
+			<Menu />
+     	 	<Scavenger />
 		</div>
 	);
 }
